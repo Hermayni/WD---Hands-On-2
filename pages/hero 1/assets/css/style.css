@@ -1,0 +1,221 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;1,500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    color: #fff;
+}
+
+/* START */
+header {
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    font-family: 'Aprila', sans-serif; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+	background-image: url(../images/oh\,\ hello\ there!.jpg);
+	background-size: 100%;
+}
+
+.logo {
+    position: relative;
+    top: 5px;
+    left: 80px;
+    height: 210px;
+}
+
+nav {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #ffffff;
+}
+
+.menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+    position: relative;
+}
+
+.menu a {
+    text-decoration: none;
+    color: #ffffff;
+    padding: 10px 20px;
+    font-size: 20px;
+    margin-left: 2rem;
+}
+
+.register {
+    position: absolute;
+    top: 100px;
+    right: 80px;
+}
+
+.register a {
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+    color: #fff;
+    padding: 10px 20px;
+    font-size: 15px;
+    border-radius: 8px;
+    background: indianred;
+}
+
+.register a:hover {
+    border: 1px solid indianred;
+    background: transparent;
+}
+
+figure {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 2rem;
+    text-align: center;
+    width: 120px;
+}
+
+.hide {
+    display: none;
+}
+
+.logohero1:hover + .hide,
+.logohero2:hover + .hide,
+.logohero3:hover + .hide,
+.logohero4:hover + .hide,
+.logohero5:hover + .hide {
+    display: block;
+    font-size: 13px;
+    font-family: 'Aprila', sans-serif; 
+    color: rgb(255, 255, 255);
+    margin-top: 5px;
+}
+
+.logohero1, .logohero2, .logohero3, .logohero4, .logohero5 {
+    height: 60px;
+    margin-top: 4rem;
+    position: relative;
+    margin-right: 14rem;
+}
+
+.menu .logohero1:hover,
+.menu .logohero2:hover,
+.menu .logohero3:hover,
+.menu .logohero4:hover,
+.menu .logohero5:hover {
+    border: 1px solid indianred;
+    border-radius: 6rem;
+    background: indianred;
+    padding: 10px;
+}
+
+/* Specific sizes for each logo */
+.logohero2 {
+    height: 80px;
+}
+
+.logohero3 {
+    height: 75px;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    margin-right: 14rem;
+}
+
+/* END */
+
+
+
+.card {
+	width: fit-content;
+	background-color: #f2f3f7;
+	border-radius: 0.75em;
+	cursor: pointer;
+	transition: ease 0.2s;
+	box-shadow: 1em 1em 1em #d8dae0b1, -0.75em -0.75em 1em #ffffff;
+	border: 1.5px solid #f2f3f7;
+  }
+  
+  .card:hover {
+	background-color: #d3ddf1;
+	border: 1.5px solid #1677ff;
+  }
+  
+  .container {
+	margin-top: 1.25em;
+	margin-bottom: 1.375em;
+	margin-left: 1.375em;
+	margin-right: 2em;
+	display: flex;
+	flex-direction: row;
+	gap: 0.75em;
+  }
+  
+  .status-ind {
+	width: 0.625em;
+	height: 0.625em;
+	background-color: #ff0000;
+	margin: 0.375em 0;
+	border-radius: 0.5em;
+  }
+  
+  .text-wrap {
+	display: flex;
+	flex-direction: column;
+	gap: 0.25em;
+	color: #333;
+  }
+  
+  .time {
+	font-size: 0.875em;
+	color: #777;
+  }
+  
+  .text-link {
+	font-weight: 500;
+	text-decoration: none;
+	color: black;
+  }
+  
+  .button-wrap {
+	display: flex;
+	flex-direction: row;
+	gap: 1em;
+	align-items: center;
+  }
+  
+  .secondary-cta {
+	background-color: transparent;
+	border: none;
+	font-size: 15px;
+	font-weight: 400;
+	color: #666;
+	cursor: pointer;
+  }
+  
+  .primary-cta {
+	font-size: 15px;
+	background-color: transparent;
+	font-weight: 600;
+	color: #1677ff;
+	border: none;
+	border-radius: 1.5em;
+	cursor: pointer;
+  }
+  
+  button:hover {
+	text-decoration: underline;
+  }
+  
+  .right {
+	display: flex;
+	flex-direction: column;
+	gap: 0.875em;
+  }
+  

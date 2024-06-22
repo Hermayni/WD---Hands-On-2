@@ -1,0 +1,225 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;1,500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    color: #fff;
+}
+
+/* START */
+header {
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    font-family: 'Aprila', sans-serif; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    z-index: 1;
+}
+
+.logo {
+    position: relative;
+    top: 5px;
+    left: 80px;
+    height: 210px;
+}
+
+nav {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #ffffff;
+}
+
+.menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+    position: relative;
+}
+
+.menu a {
+    text-decoration: none;
+    color: #ffffff;
+    padding: 10px 20px;
+    font-size: 20px;
+    margin-left: 2rem;
+}
+
+.register {
+    position: absolute;
+    top: 100px;
+    right: 80px;
+}
+
+.register a {
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+    color: #fff;
+    padding: 10px 20px;
+    font-size: 15px;
+    border-radius: 8px;
+    background: indianred;
+}
+
+.register a:hover {
+    border: 1px solid indianred;
+    background: transparent;
+}
+
+figure {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 2rem;
+    text-align: center;
+    width: 120px;
+}
+
+.hide {
+    display: none;
+}
+
+.logohero1:hover + .hide,
+.logohero2:hover + .hide,
+.logohero3:hover + .hide,
+.logohero4:hover + .hide,
+.logohero5:hover + .hide {
+    display: block;
+    font-size: 13px;
+    font-family: 'Aprila', sans-serif; 
+    color: rgb(255, 255, 255);
+    margin-top: 5px;
+}
+
+.logohero1, .logohero2, .logohero3, .logohero4, .logohero5 {
+    height: 60px;
+    margin-top: 4rem;
+    position: relative;
+    margin-right: 14rem;
+}
+
+.menu .logohero1:hover,
+.menu .logohero2:hover,
+.menu .logohero3:hover,
+.menu .logohero4:hover,
+.menu .logohero5:hover {
+    border: 1px solid indianred;
+    border-radius: 6rem;
+    background: indianred;
+    padding: 10px;
+}
+
+/* Specific sizes for each logo */
+.logohero2 {
+    height: 80px;
+}
+
+.logohero3 {
+    height: 75px;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    margin-right: 14rem;
+}
+
+/* END */
+body {
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.2)), url(../images/借りぐらしのアリエッティ.jpg);
+    background-size: 120%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container {
+    height: 400px;
+    width: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+    position: relative;
+}
+
+.container img {
+    height: 100%;
+    filter: drop-shadow(-20px 0 20px #000);
+    position: absolute;
+    left: 30%;
+    transition: .5s ease;
+    z-index: 2;
+}
+
+.container:hover img {
+    left: 0%;
+}
+
+.totoro{
+    top: 20%;
+}
+.text-content {
+    max-width: 400px;
+    height: 230px;
+    border: 2px solid;
+    top: 90%;
+    transform: translateY(-50%);
+    padding: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    box-shadow: 0 5px 20px #000;
+    background: linear-gradient(45deg, #c8d4c0ed, #9db190, #4c7a5f);
+    position: absolute;
+    left: 50%;
+    transition: .5s ease;
+    visibility: hidden;
+    opacity: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.container:hover .text-content {
+    left: 34%;
+    visibility: visible;
+    opacity: 1;
+}
+
+.text-content h2 {
+    font-size: 60px;   
+    margin-left: 3rem;
+    transition: transform .7s ease, opacity .7s ease;
+}
+
+.container:hover h2 {
+    transform: translateX(0px);
+    opacity: 1;
+}
+
+.text-content .description {
+    font-size: 13px;
+    margin-left: 3.1rem;
+    margin-bottom: 1rem;
+    transition: transform .7s ease, opacity .7s ease;
+}
+
+.container:hover .description {
+    transform: translateX(0px);
+    opacity: 1;
+}
+
+.text-content .des {
+    font-size: 14px;
+    margin-left: 3.1rem;
+    transition: transform .7s ease, opacity .7s ease;
+}
+
+.container:hover .des {
+    transform: translateX(0px);
+    opacity: 1;
+}
